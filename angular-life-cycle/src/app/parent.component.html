@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<button (click)="toggle()">shouldShow toggle</button>
+<br/><br/>
+
+<fieldset>
+  <!-- <app-child></app-child> -->
+  <app-child [prop]="shouldShow" [content]="'외부로부터 전달받는 값'" *ngIf="shouldShow"></app-child>
+</fieldset>
